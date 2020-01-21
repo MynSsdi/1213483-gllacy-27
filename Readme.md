@@ -1,7 +1,7 @@
-# Личный проект «Глейси»
+﻿# Личный проект «Глейси»
 
 * Студент: [Владимир Сапронов](https://up.htmlacademy.ru/htmlcss/27/user/1213483).
-* Наставник: [Анастасия Ничипорчук](https://up.htmlacademy.ru/htmlcss/27/user/612797).
+* Наставник: [*Анастасия Ничипорчук](https://up.htmlacademy.ru/htmlcss/27/user/612797).
 
 ---
 
