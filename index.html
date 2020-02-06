@@ -7,11 +7,20 @@
   <body>
     <header class="main_header">
       <a>
-        <img src="img/logo.svg" width="154" height="64" alt="логотип">
+        <img src="img/logo.svg" width="154" height="64" alt="Логотип проекта Глейси">
       </a>
       <nav>
         <ul class="main_menu">
-          <li><a href="#">Каталог</a></li>
+          <li>
+            <a href="#">Каталог</a>
+            <ul class="sub_menu visiually-hidden">
+              <li><a href="#"></a><strong>Новинки</strong></li>
+              <li><a href="#"></a>Сливочное</li>
+              <li><a href="#"></a>Щербеты</li>
+              <li><a href="#"></a>Фруктовый лёд</li>
+              <li><a href="#"></a>Мелорин</li>
+            </ul>
+          </li>
           <li><a href="#">Доставка и оплата</a></li>
           <li><a href="#">О компании</a></li>
         </ul>
@@ -30,16 +39,16 @@
       <h1>Описание мороженого</h1>
       <section class="slider">
         <ul class="slide">
-          <li><img src="img/ice_cream_cream_strawberry.png" width="647" height="584" alt="фото двух мороженных"><h2>Крем-брюле и пломбир с малиновым джемом</h2></li>
-          <li><img src="img/ice_cream_cream_strawberry.png" width="647" height="584" alt="фото двух мороженных"><h2>Шоколадный пломбир и лимонный сорбет</h2></li>
-          <li><img src="img/ice_cream_cream_strawberry.png" width="647" height="584" alt="фото двух мороженных"><h2>Пломбир с помадкой и клубничный щербет</h2></li>
+          <li><img src="img/ice_cream_cream_strawberry.png" width="647" height="584" alt=""><h2>Крем-брюле и пломбир с малиновым джемом</h2></li>
+          <li><img src="img/ice_cream_cream_strawberry.png" width="647" height="584" alt=""><h2>Шоколадный пломбир и лимонный сорбет</h2></li>
+          <li><img src="img/ice_cream_cream_strawberry.png" width="647" height="584" alt=""><h2>Пломбир с помадкой и клубничный щербет</h2></li>
         </ul>
         <div class="radio_button">
-          <input type="radio" name="">
-          <input type="radio" name="">
-          <input type="radio" name="">
+          <input type="radio" name="creme_brulee_raspberries" aria-label="Крем-брюле и пломбир с малиновым джемом">
+          <input type="radio" name="chocolate_lemon" aria-label="Шоколадный пломбир и лимонный сорбет">
+          <input type="radio" name="fudge_strawberry" aria-label="Пломбир с помадкой и клубничный щербет">
         </div>
-        <button type="submit">Давайте оба</button>
+        <a href="#">Давайте оба</a>
       </section>
       <section>
         <h2>Баннеры</h2>
@@ -61,7 +70,7 @@
         <ul>
           <li>
             <a href="#">
-              <img src="img/ice_cream_orange.png" width="267" height="267" alt="фото мороженого">
+              <img src="img/ice_cream_orange.png" width="267" height="267" alt="Мороженое">
               <p><span>310</span>кг</p>
               <p>Сливочное с апельсиновым джемом и цитрусовой стружкой</p>
               <a href="#">Быстрый просмотр</a>
@@ -69,7 +78,7 @@
           </li>
           <li>
             <a href="#">
-              <img src="img/ice_cream_coffee.png" width="267" height="267" alt="фото мороженого">
+              <img src="img/ice_cream_coffee.png" width="267" height="267" alt="Мороженое">
               <p><span>380</span>кг</p>
               <p>Сливочно-кофейное с кусочками шоколада</p>
               <a href="#">Быстрый просмотр</a>
@@ -77,7 +86,7 @@
           </li>
           <li>
             <a href="#">
-              <img src="img/ice_cream_strawberry.png" width="267" height="267" alt="фото мороженого">
+              <img src="img/ice_cream_strawberry.png" width="267" height="267" alt="Мороженое">
               <p><span>355</span>кг</p>
               <p>Сливочно-клубничное с присыпкой из белого шоколада</p>
               <a href="#">Быстрый просмотр</a>
@@ -85,7 +94,7 @@
           </li>
           <li>
             <a href="#">
-              <img src="img/ice_cream_brulee.png" width="267" height="267" alt="фото мороженого">
+              <img src="img/ice_cream_brulee.png" width="267" height="267" alt="Мороженое">
               <p><span>415</span>кг</p>
               <p>Сливочное крем-брюле с карамельной подливкой</p>
               <a href="#">Быстрый просмотр</a>
@@ -124,8 +133,8 @@
       <section class="subscribe">
         <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит.
            Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
-        <form class="subscribe_form" action="" method="post">
-          <input type="text" placeholder="email@example.com">
+        <form class="subscribe_form" action="https://echo.htmlacademy.ru" method="post" aria-label="Форма обратной связи">
+          <input type="text" placeholder="email@example.com" arial-label="Поле для ввода вашей электронной почты">
           <button type="submit">Отправить</button>
         </form>
       </section>
@@ -148,11 +157,10 @@
    </main>
     <footer class="main_footer">
       <ul class="social_menu">
-        <li><a href="#">Твиттер</a></li>
-        <li><a href="#">Инстаграмм</a></li>
-
-        <li><a href="#">Фейсбук</a></li>
-        <li><a href="#">Вконтакте</a></li>
+        <li><a href="#" aria-label="Твиттер"></a></li>
+        <li><a href="#" aria-label="Инстаграмм"></a></li>
+        <li><a href="#" aria-label="Фейсбук"></a></li>
+        <li><a href="#" aria-label="Вконтакте"></a></li>
       </ul>
       <ul class="menu_info_company">
         <li><a href="#">Для поставщиков</a></li>
@@ -164,5 +172,22 @@
         Сделано в <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> © 2019
       </p>
     </footer>
+    <form name="authorization_form" id="authorization_form" class="authorization_form visiually_hidden" action="https://echo.htmlacademy.ru" method="post" aria-label="Форма авторизации">
+      <input type="email" name="login_field" aria-label="Поле для ввода логина" placeholder="email@example.com">
+      <input type="password" mame="password_field" aria-labe="Поле для ввода пароля" placeholder="**********">
+      <button type="submit">Войти</button>
+      <a href="#">Забыли пароль?</a>
+      <a href="#">Новая регистрация</a>
+    </form>
+    <form name="search_form" id="search_form" class="search_form visiually_hidden" action="https://echo.htmlacademy.ru" method="post" aria-label="Форма поиска">
+      <input type="text" name="search_field" aria-label="Поле ввода текста для поиска" placeholder="Крем-брюле" aria-label="">
+    </form>
+    <form name="feedback_form" id="feedback_form" class="feedback_form visiually_hidden" action="https://echo.htmlacademy.ru" method="post" aria-label="Форма обртаной связи">
+      <p>Мы обязательно вам ответим!</p>
+      <input type="text" name="name_field" placeholder="Имя Фамилия" aria-label="Поле для ввода имени и фамилии">
+      <input type="email" name="email_field" placeholder="Имя Фамилия" aria-label="Поле для ввода электронной почты">
+      <textarea rows="10">В свободной форме</textarea>
+      <input type="submit" value="Отправить">
+    </form>
   </body>
 </html>
