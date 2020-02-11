@@ -2,6 +2,117 @@ body {
   margin: 0;
   padding: 0;
 
-  font-family: Roboto, Arial, sans-serif;
-  font-size: ;
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: normal;
+  color: #fff;
+
+  background-color: #8996a6;
+}
+
+button {
+  width: 189px;
+  height: 45px;
+  opacity: 0.99;
+  box-shadow: 0px 2px 2px 0 var(--deep-red-64);
+  background-image: linear-gradient(to top, #e74a35, #f26843);
+}
+
+button span {
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 24px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.main_header {
+  font-weight: bold;
+}
+
+.site_navigation {
+  line-height: 18px;
+}
+
+.user_navigation {
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 500;
+}
+
+.site_navigation,
+.user_navigation,
+.sub_menu {
+  list-style: none;
+}
+
+.site_navigation a,
+.user_navigation a,
+.sub_menu a {
+  color: #fff;
+}
+
+.working_mode span:first-child {
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.mobile_contact {
+  font-size: 22px;
+  line-height: 24px;
+}
+
+.slide {
+  list-style: none;
+}
+
+.slide h2 {
+  font-size: 60px;
+  line-height: 60px;
+}
+
+.slider a {
+width: 280px;
+height: 64px;
+font-size: 32px;
+line-height: 44px;
+color: #fff;
+font-weight: bold;
+box-shadow: 0px 2px 2px 0 var(--deep-red-64);
+background-image: linear-gradient(to top, #e74a35, #f26843);
+}
+
+.banners {
+  font-weight: bold;
+}
+
+
+.paper {
+ width: 560px;
+ height: 229px;
+ border-radius: 15px;
+ background-color: black;
+}
+
+.paper-1 {
+  background-image: url("img/raspberry.png");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.paper-2 {
+  background-image: url("img/chocolate.png");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.paper h3 {
+  font-size: 35px;
+  line-height: 41px;
+}
+
+.paper p {
+  font-size: 18px;
+  line-height: 22px;
 }
