@@ -14,8 +14,6 @@ body {
   display: none;
 }
 
-
-
 .button {
   display: block;
   width: 189px;
@@ -87,6 +85,22 @@ body {
   font-size: 60px;
   line-height: 60px;
 }
+
+form {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 16px;
+  color: #ffffff;
+}
+
+.element_form_bg {
+ width: 220px;
+ height: 37px;
+ opacity: 0.2;
+ background-color: #ffffff;
+ border-radius: 50px;
+}
+
 
 .banners {
   font-weight: bold;
