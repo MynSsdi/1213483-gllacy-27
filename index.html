@@ -3,36 +3,39 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Глейси. Последняя версия</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap&subset=cyrillic,cyrillic-ext,latin-ext" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="main_header">
       <a>
         <img src="img/logo.svg" width="154" height="64" alt="Логотип проекта Глейси">
       </a>
-      <nav>
-        <ul class="main_menu">
+      <nav class="main_navigation">
+        <ul class="site_navigation">
           <li>
             <a href="#">Каталог</a>
-            <ul class="sub_menu visiually-hidden">
-              <li><a href="#"></a><strong>Новинки</strong></li>
-              <li><a href="#"></a>Сливочное</li>
-              <li><a href="#"></a>Щербеты</li>
-              <li><a href="#"></a>Фруктовый лёд</li>
-              <li><a href="#"></a>Мелорин</li>
+            <ul class="sub_menu visible_hidden">
+              <li><a href="#"><strong>Новинки</a></strong></li>
+              <li><a href="#">Сливочное</a></li>
+              <li><a href="#">Щербеты</a></li>
+              <li><a href="#">Фруктовый лёд</a></li>
+              <li><a href="#">Мелорин</a></li>
             </ul>
           </li>
           <li><a href="#">Доставка и оплата</a></li>
           <li><a href="#">О компании</a></li>
         </ul>
-        <ul class="menu_functionally">
+        <ul class="user_navigation">
           <li><a href="#">Поиск</a></li>
           <li><a href="#">Войти</a></li>
           <li><a href="#">Корзина</a></li>
         </ul>
       </nav>
-      <p>
+      <p class="working_mode">
         <span>С 10 до 23 ежедневно</span><br>
-        <span>8 812 450 25 25</span>
+        <span class="mobile_contact">8 812 450 25 25</span>
       </p>
     </header>
     <main>
@@ -48,65 +51,57 @@
           <input type="radio" name="chocolate_lemon" aria-label="Шоколадный пломбир и лимонный сорбет">
           <input type="radio" name="fudge_strawberry" aria-label="Пломбир с помадкой и клубничный щербет">
         </div>
-        <a href="#">Давайте оба</a>
+        <a href="#" class="button button_slider"><span>Давайте оба</span></a>
       </section>
-      <section>
+      <section class="banners">
         <h2>Баннеры</h2>
-        <article>
+        <article class="paper paper-1">
           <h3>Малинка даром!</h3>
           <p>При покупке 2 кг любого фруктового мороженого, добавим<br>
              в ваш заказ банку малинового варенья бесплатно.</p>
-          <button>Хочу варенье!</button>
+          <button class="button">Хочу варенье!</button>
         </article>
-        <article>
+        <article class="paper paper-2">
           <h3>Шоколадки даром!</h3>
           <p>При покупке 2 кг пломбира, добавим в ваш заказ упаковку<br>
              вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
-          <button>Хочу шоколадки!</button>
+          <button class="button">Хочу шоколадки!</button>
         </article>
       </section>
       <section class="hit">
         <h2>Хит</h2>
-        <ul>
-          <li>
-            <a href="#">
+        <ul class="popular_ice_cream">
+          <li class="card card_hit">
               <img src="img/ice_cream_orange.png" width="267" height="267" alt="Мороженое">
-              <p><span>310</span>кг</p>
+              <p><span class="price">310</span>&nbsp;&nbsp;&nbsp;&nbsp;/кг</p>
               <p>Сливочное с апельсиновым джемом и цитрусовой стружкой</p>
-              <a href="#">Быстрый просмотр</a>
-            </a>
+              <a href="#" class="button button_hidden">Быстрый просмотр</a>
           </li>
-          <li>
-            <a href="#">
+          <li class="card card_hit">
               <img src="img/ice_cream_coffee.png" width="267" height="267" alt="Мороженое">
-              <p><span>380</span>кг</p>
+              <p><span class="price">380</span>&nbsp;&nbsp;&nbsp;&nbsp;/кг</p>
               <p>Сливочно-кофейное с кусочками шоколада</p>
-              <a href="#">Быстрый просмотр</a>
-            </a>
+              <a href="#" class="button button_hidden">Быстрый просмотр</a>
           </li>
-          <li>
-            <a href="#">
+          <li class="card card_hit">
               <img src="img/ice_cream_strawberry.png" width="267" height="267" alt="Мороженое">
-              <p><span>355</span>кг</p>
+              <p><span class="price">355</span>&nbsp;&nbsp;&nbsp;&nbsp;/кг</p>
               <p>Сливочно-клубничное с присыпкой из белого шоколада</p>
-              <a href="#">Быстрый просмотр</a>
-            </a>
+              <a href="#" class="button button_hidden">Быстрый просмотр</a>
           </li>
-          <li>
-            <a href="#">
+          <li class="card card_hit">
               <img src="img/ice_cream_brulee.png" width="267" height="267" alt="Мороженое">
-              <p><span>415</span>кг</p>
+              <p><span class="price">415</span>&nbsp;&nbsp;&nbsp;&nbsp;/кг</p>
               <p>Сливочное крем-брюле с карамельной подливкой</p>
-              <a href="#">Быстрый просмотр</a>
-            </a>
+              <a href="#" class="button button_hidden">Быстрый просмотр</a>
           </li>
         </ul>
       </section>
       <section class="seo">
           <h2>SEO</h2>
-          <b>Магазин Глэйси — это онлайн- и офлайн-магазин по продаже мороженого
-            собственного производства на развес</b>
-          <ul>
+          <p>Магазин Глэйси — это онлайн- и офлайн-магазин по продаже мороженого
+            собственного производства на развес</p>
+          <ul class="advantages">
             <li>
               <p>Все наше мороженое изготавливается на собственном производстве,
               с использованием современного оборудования и проверенных временем технологий.</p>
@@ -135,47 +130,47 @@
            Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
         <form class="subscribe_form" action="https://echo.htmlacademy.ru" method="post" aria-label="Форма обратной связи">
           <input type="text" placeholder="email@example.com" arial-label="Поле для ввода вашей электронной почты">
-          <button type="submit">Отправить</button>
+          <button class="button" type="submit">Отправить</button>
         </form>
       </section>
-      <section>
+      <section class="map">
         <h2>Карта</h2>
         <img src="img/map.png" width="1250" height="430">
-        <section>
+        <section class="address">
           <h3>Адресный блок</h3>
           <p>Адрес главного офиса<br>
             и офлайн-магазина:<br>
-            <b>ул. Большая Конюшенная<br>
-             19/8, Санкт-Петербург</b></p>
+            <span>ул. Большая Конюшенная<br>
+             19/8, Санкт-Петербург</span></p>
           <p>Для заказов по телефону:<br>
             <a href="#">8 812 450 25 25</a><br>
             (с 10 до 20 ежедневно)
           </p>
-          <button type="submit">Форма обратной связи</button>
+          <button class="button button_address" type="submit">Форма обратной связи</button>
         </section>
       </section>
    </main>
     <footer class="main_footer">
       <ul class="social_menu">
-        <li><a href="#" aria-label="Твиттер"></a></li>
-        <li><a href="#" aria-label="Инстаграмм"></a></li>
-        <li><a href="#" aria-label="Фейсбук"></a></li>
-        <li><a href="#" aria-label="Вконтакте"></a></li>
+        <li><a href="#" class="twitter" aria-label="Твиттер"></a></li>
+        <li><a href="#" class="instagram" aria-label="Инстаграмм"></a></li>
+        <li><a href="#" class="facebook" aria-label="Фейсбук"></a></li>
+        <li><a href="#" class="vkontakte" aria-label="Вконтакте"></a></li>
       </ul>
       <ul class="menu_info_company">
-        <li><a href="#">Для поставщиков</a></li>
+        <li class="heart"><a href="#">Для поставщиков</a></li>
         <li><a href="#">О производстве</a></li>
         <li><a href="#">Наши документы</a></li>
         <li><a href="#">Экологические стандарты</a></li>
       </ul>
-      <p>
-        Сделано в <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> © 2019
+      <p class="copyriting">
+        Сделано в <a class="html_academy" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> © 2019
       </p>
     </footer>
     <form name="authorization_form" id="authorization_form" class="authorization_form visiually_hidden" action="https://echo.htmlacademy.ru" method="post" aria-label="Форма авторизации">
       <input type="email" name="login_field" aria-label="Поле для ввода логина" placeholder="email@example.com">
       <input type="password" mame="password_field" aria-labe="Поле для ввода пароля" placeholder="**********">
-      <button type="submit">Войти</button>
+      <button class="button" type="submit">Войти</button>
       <a href="#">Забыли пароль?</a>
       <a href="#">Новая регистрация</a>
     </form>
