@@ -113,13 +113,13 @@ form {
  background-color: black;
 }
 
-.paper-1 {
+.paper-raspberry {
   background-image: url("../img/raspberry.png");
   background-repeat: no-repeat;
   background-position: 0 0;
 }
 
-.paper-2 {
+.paper-chocolate {
   background-image: url("../img/chocolate.png");
   background-repeat: no-repeat;
   background-position: 0 0;
