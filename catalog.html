@@ -14,10 +14,10 @@
       </a>
       <nav class="main_navigation">
         <ul class="site_navigation">
-          <li>
+          <li class="catalog_product">
             <a href="#">Каталог</a>
-            <ul class="sub_menu visible_hidden">
-              <li><a href="#"><strong>Новинки</a></strong></li>
+            <ul class="sub_menu visually_hidden">
+              <li><a class="new_product" href="#">Новинки</a></li>
               <li><a href="#">Сливочное</a></li>
               <li><a href="#">Щербеты</a></li>
               <li><a href="#">Фруктовый лёд</a></li>
@@ -34,8 +34,8 @@
         </ul>
       </nav>
       <p class="working_mode">
-        <span>С 10 до 23 ежедневно</span><br>
-        <span class="mobile_contact">8 812 450 25 25</span>
+        <span class="time_work">С 10 до 23 ежедневно</span><br>
+        <a class="mobile_contact" href="#">8 812 450 25 25</a>
       </p>
     </header>
     <main>
@@ -52,19 +52,18 @@
           <option value="expensive">сначала дорогие</option>
           <option value="bold">по жирности</option>
         </select>
-        <div class="">
+        <div class="additive">
           <span>Наполнители</span>
             <label for="chocolate">шоколадные</label>
-            <input id="chocolate" name="chocolate_field" type="checkbox" value="" checked>
+            <input id="chocolate" name="chocolate_field" type="checkbox" value="chocolate" checked>
             <label for="sugar_powders">сахарные присыпки</label>
-            <input id="sugar_powders" name="sugar_powders_field" type="checkbox" value="" checked>
+            <input id="sugar_powders" name="sugar_powders_field" type="checkbox" value="sugar_powders" checked>
             <label for="fruits">фрукты</label>
-            <input id="fruits" name="fruits_field" type="checkbox" value="">
+            <input id="fruits" name="fruits_field" type="checkbox" value="fruits">
             <label for="syrups">сиропы</label>
-            <input id="syrups" name="syrups_fields" type="checkbox" value="">
+            <input id="syrups" name="syrups_field" type="checkbox" value="syrups">
             <label for="jams">джеммы</label>
-            <input id="jams" name="jams_field" type="checkbox" value="">
-
+            <input id="jams" name="jams_field" type="checkbox" value="jams">
         </div>
         <div>
           <span>Жирность</span>
@@ -86,73 +85,73 @@
         <ul class="popular_ice_cream">
           <li class="card">
               <img src="img/ice_cream_orange.png" width="267" height="267" alt="Мороженое">
-              <p><span class="price">310</span>&nbsp;&nbsp;&nbsp;&nbsp;/кг</p>
+              <p><span class="price">310</span>/кг</p>
               <p>Сливочное с апельсиновым джемом и цитрусовой стружкой</p>
               <a href="#" class="button button_hidden">Быстрый просмотр</a>
           </li>
           <li class="card">
               <img src="img/ice_cream_coffee.png" width="267" height="267" alt="Мороженое">
-              <p><span class="price">380</span>&nbsp;&nbsp;&nbsp;&nbsp;/кг</p>
+              <p><span class="price">380</span>/кг</p>
               <p>Сливочно-кофейное с кусочками шоколада</p>
               <a href="#" class="button button_hidden">Быстрый просмотр</a>
           </li>
           <li class="card">
               <img src="img/ice_cream_strawberry.png" width="267" height="267" alt="Мороженое">
-              <p><span class="price">355</span>&nbsp;&nbsp;&nbsp;&nbsp;/кг</p>
+              <p><span class="price">355</span>/кг</p>
               <p>Сливочно-клубничное с присыпкой из белого шоколада</p>
               <a href="#" class="button button_hidden">Быстрый просмотр</a>
           </li>
           <li class="card">
               <img src="img/ice_cream_brulee.png" width="267" height="267" alt="Мороженое">
-              <p><span class="price">415</span>&nbsp;&nbsp;&nbsp;&nbsp;/кг</p>
+              <p><span class="price">415</span>/кг</p>
               <p>Сливочное крем-брюле с карамельной подливкой</p>
               <a href="#" class="button button_hidden">Быстрый просмотр</a>
           </li>
           <li class="card">
               <img src="img/ice_cream_lingonberry.png" width="267" height="267" alt="Мороженое">
-              <p><span class="price">325</span>&nbsp;&nbsp;&nbsp;&nbsp;/кг</p>
+              <p><span class="price">325</span>/кг</p>
               <p>Сливочное с брусничным джемом</p>
               <a href="#" class="button button_hidden">Быстрый просмотр</a>
           </li>
           <li class="card">
               <img src="img/ice_cream_blueberry.png" width="267" height="267" alt="Мороженое">
-              <p><span class="price">410</span>&nbsp;&nbsp;&nbsp;&nbsp;/кг</p>
+              <p><span class="price">410</span>/кг</p>
               <p>Сливочно-черничное с цельными ягодами черники</p>
               <a href="#" class="button button_hidden">Быстрый просмотр</a>
           </li>
           <li class="card">
               <img src="img/ice_cream_limon.png" width="267" height="267" alt="Мороженое">
-              <p><span class="price">375</span>&nbsp;&nbsp;&nbsp;&nbsp;/кг</p>
+              <p><span class="price">375</span>/кг</p>
               <p>Сливочно-лимонное с карамельной присыпкой</p>
               <a href="#" class="button button_hidden">Быстрый просмотр</a>
           </li>
           <li class="card">
               <img src="img/ice__cream_chocolate.png" width="267" height="267" alt="Мороженое">
-              <p><span class="price">320</span>&nbsp;&nbsp;&nbsp;&nbsp;/кг</p>
+              <p><span class="price">320</span>/кг</p>
               <p>Сливочное с шоколадной стружкой</p>
               <a href="#" class="button button_hidden">Быстрый просмотр</a>
           </li>
           <li class="card">
               <img src="img/ice_cream_ vanilla.png" width="267" height="267" alt="Мороженое">
-              <p><span class="price">440</span>&nbsp;&nbsp;&nbsp;&nbsp;/кг</p>
+              <p><span class="price">440</span>/кг</p>
               <p>Сливочно-ванильное с кусочками шоколада</p>
               <a href="#" class="button button_hidden">Быстрый просмотр</a>
           </li>
           <li class="card">
               <img src="img/ice_cream_menthol.png" width="267" height="267" alt="Мороженое">
-              <p><span class="price">475</span>&nbsp;&nbsp;&nbsp;&nbsp;/кг</p>
+              <p><span class="price">475</span>/кг</p>
               <p>Сливочное с ментоловым сиропом</p>
               <a href="#" class="button button_hidden">Быстрый просмотр</a>
           </li>
           <li class="card">
               <img src="img/ice_cream_black_chocolate.png" width="267" height="267" alt="Мороженое">
-              <p><span class="price">355</span>&nbsp;&nbsp;&nbsp;&nbsp;/кг</p>
+              <p><span class="price">355</span>/кг</p>
               <p>Сливочное с кусочками шоколада</p>
               <a href="#" class="button button_hidden">Быстрый просмотр</a>
           </li>
           <li class="card">
               <img src="img/ice_cream_mint syrup.png" width="267" height="267" alt="Мороженое">
-              <p><span class="price">420</span>&nbsp;&nbsp;&nbsp;&nbsp;/кг</p>
+              <p><span class="price">420</span>/кг</p>
               <p>Сливочное с мятным сиропом</p>
               <a href="#" class="button button_hidden">Быстрый просмотр</a>
           </li>

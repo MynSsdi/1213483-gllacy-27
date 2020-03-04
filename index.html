@@ -14,10 +14,10 @@
       </a>
       <nav class="main_navigation">
         <ul class="site_navigation">
-          <li>
+          <li  class="catalog_product">
             <a href="#">Каталог</a>
-            <ul class="sub_menu visible_hidden">
-              <li><a href="#"><strong>Новинки</a></strong></li>
+            <ul class="sub_menu visually_hidden">
+              <li><a href="#">Новинки</a></li>
               <li><a href="#">Сливочное</a></li>
               <li><a href="#">Щербеты</a></li>
               <li><a href="#">Фруктовый лёд</a></li>
@@ -34,38 +34,38 @@
         </ul>
       </nav>
       <p class="working_mode">
-        <span>С 10 до 23 ежедневно</span><br>
-        <span class="mobile_contact">8 812 450 25 25</span>
+        <span class="time_work">С 10 до 23 ежедневно</span><br>
+        <a class="mobile_contact" href="#">8 812 450 25 25</a>
       </p>
     </header>
     <main>
-      <h1>Описание мороженого</h1>
+      <h1 class="visiually-hidden">Описание мороженого</h1>
       <section class="slider">
         <ul class="slide">
           <li><img src="img/ice_cream_cream_strawberry.png" width="647" height="584" alt=""><h2>Крем-брюле и пломбир с малиновым джемом</h2></li>
           <li><img src="img/ice_cream_cream_strawberry.png" width="647" height="584" alt=""><h2>Шоколадный пломбир и лимонный сорбет</h2></li>
           <li><img src="img/ice_cream_cream_strawberry.png" width="647" height="584" alt=""><h2>Пломбир с помадкой и клубничный щербет</h2></li>
         </ul>
-        <div class="radio_button">
-          <input type="radio" name="creme_brulee_raspberries" aria-label="Крем-брюле и пломбир с малиновым джемом">
-          <input type="radio" name="chocolate_lemon" aria-label="Шоколадный пломбир и лимонный сорбет">
-          <input type="radio" name="fudge_strawberry" aria-label="Пломбир с помадкой и клубничный щербет">
+        <div class="radio_buttons">
+          <input class="radio_button" type="radio" name="creme_brulee_raspberries" aria-label="Крем-брюле и пломбир с малиновым джемом">
+          <input class="radio_button" type="radio" name="chocolate_lemon" aria-label="Шоколадный пломбир и лимонный сорбет">
+          <input class="radio_button" type="radio" name="fudge_strawberry" aria-label="Пломбир с помадкой и клубничный щербет">
         </div>
-        <a href="#" class="button button_slider"><span>Давайте оба</span></a>
+        <a href="#" class="button button_slider">Давайте оба</a>
       </section>
       <section class="banners">
         <h2>Баннеры</h2>
-        <article class="paper paper-1">
+        <article class="paper paper-raspberry">
           <h3>Малинка даром!</h3>
           <p>При покупке 2 кг любого фруктового мороженого, добавим<br>
              в ваш заказ банку малинового варенья бесплатно.</p>
-          <button class="button">Хочу варенье!</button>
+          <button type="button" class="button button_article">Хочу варенье!</button>
         </article>
-        <article class="paper paper-2">
+        <article class="paper paper-chocolate">
           <h3>Шоколадки даром!</h3>
           <p>При покупке 2 кг пломбира, добавим в ваш заказ упаковку<br>
              вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
-          <button class="button">Хочу шоколадки!</button>
+          <button type="button" class="button button_article">Хочу шоколадки!</button>
         </article>
       </section>
       <section class="hit">
@@ -73,25 +73,25 @@
         <ul class="popular_ice_cream">
           <li class="card card_hit">
               <img src="img/ice_cream_orange.png" width="267" height="267" alt="Мороженое">
-              <p><span class="price">310</span>&nbsp;&nbsp;&nbsp;&nbsp;/кг</p>
+              <p><span class="price">310</span>/кг</p>
               <p>Сливочное с апельсиновым джемом и цитрусовой стружкой</p>
               <a href="#" class="button button_hidden">Быстрый просмотр</a>
           </li>
           <li class="card card_hit">
               <img src="img/ice_cream_coffee.png" width="267" height="267" alt="Мороженое">
-              <p><span class="price">380</span>&nbsp;&nbsp;&nbsp;&nbsp;/кг</p>
+              <p><span class="price">380</span>/кг</p>
               <p>Сливочно-кофейное с кусочками шоколада</p>
               <a href="#" class="button button_hidden">Быстрый просмотр</a>
           </li>
           <li class="card card_hit">
               <img src="img/ice_cream_strawberry.png" width="267" height="267" alt="Мороженое">
-              <p><span class="price">355</span>&nbsp;&nbsp;&nbsp;&nbsp;/кг</p>
+              <p><span class="price">355</span>/кг</p>
               <p>Сливочно-клубничное с присыпкой из белого шоколада</p>
               <a href="#" class="button button_hidden">Быстрый просмотр</a>
           </li>
           <li class="card card_hit">
               <img src="img/ice_cream_brulee.png" width="267" height="267" alt="Мороженое">
-              <p><span class="price">415</span>&nbsp;&nbsp;&nbsp;&nbsp;/кг</p>
+              <p><span class="price">415</span>/кг</p>
               <p>Сливочное крем-брюле с карамельной подливкой</p>
               <a href="#" class="button button_hidden">Быстрый просмотр</a>
           </li>
